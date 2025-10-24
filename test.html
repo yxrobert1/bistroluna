@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rezervare masă</title>
+  <style>
+    :root{
+      --brown: rgba(165,113,70,1);
+      --dark: rgba(11,26,43,1);
+      --beige: rgba(244,232,214,1);
+      --max-width: 720px;
+      --radius: 12px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, var(--dark) 0%, #0d2030 100%);
+      color: var(--beige);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:24px;
+    }
+
+    .card{
+      width:100%;
+      max-width:var(--max-width);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    h1{
+      margin:0 0 8px 0;
+      font-size:1.25rem;
+      color: var(--beige);
+    }
+    p.lead{
+      margin:0 0 20px 0;
+      color:rgba(244,232,214,0.85);
+      font-size:0.95rem;
+    }
+
+    form{
+      display:grid;
+      gap:12px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* make some controls span the full width */
+    .full{grid-column: 1 / -1;}
+
+    label{
+      display:block;
+      font-size:0.85rem;
+      margin-bottom:6px;
+      color: rgba(244,232,214,0.9);
+    }
+    input, select{
+      width:100%;
+      padding:10px 12px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.02);
+      color: var(--beige);
+      font-size:0.95rem;
+      outline:none;
+      transition: box-shadow .12s, border-color .12s;
+    }
+    input:focus, select:focus{
+      box-shadow: 0 4px 18px rgba(165,113,70,0.12);
+      border-color: var(--brown);
+    }
+
+    .hint{
+      font-size:0.8rem;
+      color: rgba(244,232,214,0.7);
+      margin-top:6px;
+    }
+
+    .row{
+      display:flex;
+      gap:12px;
+    }
+
+    .actions{
+      display:flex;
+      gap:12px;
+      justify-content:flex-end;
+      align-items:center;
+      margin-top:6px;
+      grid-column: 1 / -1;
+    }
+
+    button.primary{
+      background: linear-gradient(90deg, var(--brown), #a8612f);
+      color: var(--beige);
+      border: none;
+      padding:10px 16px;
+      border-radius:10px;
+      cursor:pointer;
+      font-weight:600;
+      box-shadow: 0 6px 18px rgba(165,113,70,0.18);
+    }
+    button.secondary{
+      background:transparent;
+      border:1px solid rgba(255,255,255,0.06);
+      color:var(--beige);
+      padding:10px 14px;
+      border-radius:10px;
+      cursor:pointer;
+    }
+
+    .msg{
+      padding:10px 12px;
+      border-radius:8px;
+      font-size:0.95rem;
+      display:none;
+    }
+    .msg.success{
+      background: rgba(30,60,30,0.4);
+      color: #e6f7ea;
+      border:1px solid rgba(30,120,30,0.18);
+    }
+    .msg.error{
+      background: rgba(80,20,20,0.3);
+      color:#ffecec;
+      border:1px solid rgba(120,30,30,0.18);
+    }
+
+    @media (max-width:640px){
+      form{grid-template-columns: 1fr;}
+      .actions{justify-content:stretch; flex-direction:column;}
+      .actions button{width:100%;}
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>Rezervare masă</h1>
+    <p class="lead">Completează datele de mai jos pentru a rezerva o masă. Vei primi confirmare prin SMS sau e-mail.</p>
+
+    <!-- dacă vrei să trimiți la server, adaugă action="/rezervari" method="post" -->
+    <form id="reservationForm" novalidate>
+      <div>
+        <label for="nume">Nume</label>
+        <input id="nume" name="nume" type="text" autocomplete="family-name" placeholder="Ex: Ionescu" required minlength="2" />
+      </div>
+
+      <div>
+        <label for="prenume">Prenume</label>
+        <input id="prenume" name="prenume" type="text" autocomplete="given-name" placeholder="Ex: Maria" required minlength="2" />
+      </div>
+
+      <div>
+        <label for="telefon">Număr de telefon</label>
+        <input id="telefon" name="telefon" type="tel" placeholder="07xx xxx xxx" required
+               pattern="^(\+?4?07|07)\d{7,8}$" aria-describedby="telHint" />
+        <div id="telHint" class="hint">Foloseste format local (ex: 07xxxxxxxx). Poți include +40.</div>
+      </div>
+
+      <div>
+        <label for="persoane">Număr de persoane</label>
+        <input id="persoane" name="persoane" type="number" min="1" max="20" value="2" required />
+      </div>
+
+      <div>
+        <label for="data">Data rezervării</label>
+        <input id="data" name="data" type="date" required />
+      </div>
+
+      <div>
+        <label for="ora">Ora rezervării</label>
+        <input id="ora" name="ora" type="time" required />
+      </div>
+
+      <div class="full">
+        <label for="observatii">Cerințe speciale (alergii, ocazii etc.)</label>
+        <input id="observatii" name="observatii" type="text" placeholder="Ex: meniu vegetarian, centru mesei pentru aniversare (opțional)" />
+      </div>
+
+      <div class="actions">
+        <div style="flex:1">
+          <div id="feedback" class="msg" role="status" aria-live="polite"></div>
+        </div>
+        <button type="button" class="secondary" id="resetBtn">Resetează</button>
+        <button type="submit" class="primary">Rezervă masa</button>
+      </div>
+    </form>
+  </main>
+
+  <script>
+    (function(){
+      const form = document.getElementById('reservationForm');
+      const dataInput = document.getElementById('data');
+      const feedback = document.getElementById('feedback');
+      const resetBtn = document.getElementById('resetBtn');
+
+      // Setează min pentru data (azi)
+      const azi = new Date();
+      const yyyy = azi.getFullYear();
+      const mm = String(azi.getMonth()+1).padStart(2,'0');
+      const dd = String(azi.getDate()).padStart(2,'0');
+      dataInput.min = `${yyyy}-${mm}-${dd}`;
+
+      // Opțional: setează ora minimă (ex: deschidere 11:00) și maximă (22:00)
+      // document.getElementById('ora').min = '11:00';
+      // document.getElementById('ora').max = '22:00';
+
+      function showMessage(text, type='success'){
+        feedback.style.display = 'block';
+        feedback.className = 'msg ' + (type === 'success' ? 'success' : 'error');
+        feedback.textContent = text;
+      }
+
+      function clearMessage(){
+        feedback.style.display = 'none';
+        feedback.textContent = '';
+      }
+
+      resetBtn.addEventListener('click', function(){
+        form.reset();
+        clearMessage();
+      });
+
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        clearMessage();
+
+        // Validare HTML5
+        if (!form.checkValidity()){
+          // găsește primul câmp invalid și focus
+          const firstInvalid = form.querySelector(':invalid');
+          if (firstInvalid) firstInvalid.focus();
+          showMessage('Te rog completează corect toate câmpurile obligatorii.', 'error');
+          return;
+        }
+
+        // Validare suplimentară telefon (pattern poate fi ajustat)
+        const tel = document.getElementById('telefon').value.trim();
+        const telPattern = /^(\+?4?07|07)\d{7,8}$/;
+        if (!telPattern.test(tel)){
+          document.getElementById('telefon').focus();
+          showMessage('Te rugăm introdu un număr de telefon valid (ex: 07xxxxxxxx sau +40 7xxxxxxxx).', 'error');
+          return;
+        }
+
+        // Construiește obiectul (poți trimite la server cu fetch / XHR)
+        const payload = {
+          nume: document.getElementById('nume').value.trim(),
+          prenume: document.getElementById('prenume').value.trim(),
+          telefon: tel,
+          persoane: Number(document.getElementById('persoane').value),
+          data: document.getElementById('data').value,
+          ora: document.getElementById('ora').value,
+          observatii: document.getElementById('observatii').value.trim()
+        };
+
+        // Exemplu: afișare în consolă (înlocuiește cu fetch POST la backend)
+        console.log('Rezervare (local):', payload);
+
+        // Simulează confirmare
+        showMessage('Rezervarea a fost înregistrată. Vei primi confirmare prin SMS sau e-mail.', 'success');
+
+        // Dacă vrei să trimiți la backend:
+        // fetch('/api/rezervari', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(payload) })
+        //   .then(r => r.json()).then(resp=>{ showMessage('Confirmare trimisă.') }).catch(err=>{ showMessage('Eroare trimitere.', 'error') });
+
+        // opțional resetează form după 2s
+        setTimeout(()=>form.reset(), 1400);
+      });
+    })();
+  </script>
+</body>
+</html>

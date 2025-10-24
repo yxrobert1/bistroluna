@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Luna - Luxury Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header class="header" id="navbar">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                <img src="images/logo.png" alt="Bistro Luna Logo">
+                <span>Bistro Luna</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Despre noi</a></li>
+                <li><a href="#meniu">Meniu</a></li>
+                <li><a href="">Galerie</a></li>
+                <li><a href="rezervari.html">Rezervari</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="languages">
+                <a href="" class="ro-ro">RO</a>
+                <a href="" class="ro-en">EN</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        </nav>
+    </header>
+
+    <section class="hero-menu" id="hero-menu">
+        <div class="hero-content">
+            <div class="hero-menu-box">
+                <p>Meniu Restaurant Bistro Luna</p>
+            </div>
+        </div>
+    </section>
+
+    <p style="width: 100%; height: 10px; background-color: rgba(165, 113, 70, 1);"></p>
+
+    <section class="meniu" id="meniu">
+        <div class="meniu-content">
+            <nav class="meniu-navbar">
+                <ul class="meniu-list">
+                    <li class="nav-item-dropdown">
+                        <a href="#" onclick="event.preventDefault()">Mic dejun & Gustări</a>
+                        <ul class="dropdown-menu first">
+                            <li><a href="#micdejun">Mic dejun</a></li>
+                            <li><a href="#starters">Starters</a></li>
+                            <li><a href="#paste">Paste</a></li>
+                            <li><a href="#paste">Salate</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item-dropdown">
+                        <a href="#" onclick="event.preventDefault()">Feluri principale</a>
+                        <ul class="dropdown-menu second">
+                            <li><a href="#ciorbe">Ciorbe / Supe</a></li>
+                            <li><a href="#pizza">Pizza</a></li>
+                            <li><a href="#mancaregatita">Mâncare gătită</a></li>
+                            <li><a href="#fructedemare">Fructe de mare</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item-dropdown">
+                        <a href="#" onclick="event.preventDefault()">Garnituri & Deserturi</a>
+                        <ul class="dropdown-menu third">
+                            <li><a href="#garnituri">Garnituri / Sosuri</a></li>
+                            <li><a href="#deserturi">Deserturi</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item-dropdown">
+                        <a href="#" onclick="event.preventDefault()">Băuturi</a>
+                        <ul class="dropdown-menu four">
+                            <li><a href="#cafea">Cafea</a></li>
+                            <li><a href="#bauturiracoritoare">Băuturi răcoritoare</a></li>
+                            <li><a href="#bauturialcoolice">Băuturi alcoolice</a></li>
+                            <li><a href="#cocktails">Cocktails</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <h2>Meniu</h2> 
+            <p class="subtitle">Restaurant Bistro Luna</p>
+            <div class="meniu-line">
+                <p><i class="fa-solid fa-star-of-life"></i></p>
+            </div>
+            <div class="meniu-container">
+                <div class="meniu-box">
+                    <div class="left-side">
+                        <p class="menu-category" id="micdejun">Mic dejun</p>
+                        <div class="menu-title">
+                            <span class="name-title">Preparat</span>
+                            <span class="weight-title">Gramaj</span>
+                            <span class="price-title">Preț</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Omletă clasică cu brânză și verdeață</span>
+                            <span class="weight">200 g</span>
+                            <span class="price">24 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">English Breakfast (ouă, cârnați, fasole, bacon)</span>
+                            <span class="weight">400 g</span>
+                            <span class="price">38 RON</span>
+                        </div>
+                        <div class="meniu-img-container">
+                            <img src="images/english-breakfast.png" alt="English Breakfast">
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Croissant cu unt și dulceață de casă</span>
+                            <span class="weight">120 g</span>
+                            <span class="price">18 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Toast cu avocado și ou poșat</span>
+                            <span class="weight">250 g</span>
+                            <span class="price">32 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Clătite americane cu sirop de arțar</span>
+                            <span class="weight">200 g</span>
+                            <span class="price">28 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Ouă benedict cu sos hollandaise</span>
+                            <span class="weight">280 g</span>
+                            <span class="price">34 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Iaurt cu granola și fructe proaspete</span>
+                            <span class="weight">220 g</span>
+                            <span class="price">24 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Sandviș cald cu șuncă, brânză și ou</span>
+                            <span class="weight">250 g</span>
+                            <span class="price">26 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Ouă Benedict cu spanac și sos hollandaise</span>
+                            <span class="weight">250 g</span>
+                            <span class="price">36 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Omletă cu ciuperci și brânză feta</span>
+                            <span class="weight">220 g</span>
+                            <span class="price">28 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Clătite americane cu sirop de arțar și fructe de pădure</span>
+                            <span class="weight">250 g</span>
+                            <span class="price">32 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Toast cu avocado, ou poșat și roșii cherry</span>
+                            <span class="weight">200 g</span>
+                            <span class="price">30 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Bagel cu somon afumat și cremă de brânză</span>
+                            <span class="weight">220 g</span>
+                            <span class="price">34 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Granola cu iaurt și fructe proaspete</span>
+                            <span class="weight">200 g</span>
+                            <span class="price">26 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Shakshuka – ouă în sos de roșii</span>
+                            <span class="weight">250 g</span>
+                            <span class="price">35 RON</span>
+                        </div>
+                    </div>
+                    <div class="meniu-vertical-line"></div>
+                    <div class="right-side">
+                        <p class="menu-category" id="starters">Starters</p>
+                        <div class="menu-title">
+                            <span class="name-title">Preparat</span>
+                            <span class="weight-title">Gramaj</span>
+                            <span class="price-title">Preț</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Bruschette cu roșii cherry și busuioc</span>
+                            <span class="weight">180 g</span>
+                            <span class="price">26 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Guacamole cu nachos</span>
+                            <span class="weight">200 g</span>
+                            <span class="price">29 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Platou de brânzeturi și măsline</span>
+                            <span class="weight">250 g</span>
+                            <span class="price">44 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Tartine cu somon afumat</span>
+                            <span class="weight">180 g</span>
+                            <span class="price">36 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Hummus cu lipie caldă</span>
+                            <span class="weight">220 g</span>
+                            <span class="price">27 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Pate de ficat cu ceapă caramelizată</span>
+                            <span class="weight">180 g</span>
+                            <span class="price">31 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Mini frigărui caprese (mozzarella, roșii, busuioc)</span>
+                            <span class="weight">150 g</span>
+                            <span class="price">24 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Arancini – biluțe de orez cu brânză și legume</span>
+                            <span class="weight">180 g</span>
+                            <span class="price">30 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Calamari prăjiți cu sos tartar</span>
+                            <span class="weight">200 g</span>
+                            <span class="price">38 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Rulouri de dovlecel cu ricotta și ierburi</span>
+                            <span class="weight">170 g</span>
+                            <span class="price">28 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Mini croque-monsieur cu șuncă și brânză</span>
+                            <span class="weight">160 g</span>
+                            <span class="price">27 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Frigărui de creveți cu sos de lămâie</span>
+                            <span class="weight">180 g</span>
+                            <span class="price">36 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Tartă cu legume coapte și pesto</span>
+                            <span class="weight">200 g</span>
+                            <span class="price">32 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Quesadilla cu pui și brânzeturi</span>
+                            <span class="weight">280 g</span>
+                            <span class="price">38 RON</span>
+                        </div>
+                        <div class="meniu-img-container">
+                            <img src="images/quesadilla.jpg" alt="English Breakfast">
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Mix tapas internațional</span>
+                            <span class="weight">250 g</span>
+                            <span class="price">42 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Supă rece gazpacho</span>
+                            <span class="weight">300 ml</span>
+                            <span class="price">25 RON</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="meniu-line" style="padding: 30px 0px;">
+                    <p><i class="fa-solid fa-star-of-life"></i></p>
+                 </div>
+                <div class="meniu-box">
+                    <div class="left-side">
+                        <p class="menu-category" id="ciorbe">Ciorbe / Supe</p>
+                        <div class="menu-title">
+                            <span class="name-title">Preparat</span>
+                            <span class="weight-title">Gramaj</span>
+                            <span class="price-title">Preț</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Ciorbă de burtă tradițională</span>
+                            <span class="weight">350 ml</span>
+                            <span class="price">28 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Supă cremă de roșii cu busuioc</span>
+                            <span class="weight">300 ml</span>
+                            <span class="price">24 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Ciorbă ardelenească de văcuță</span>
+                            <span class="weight">350 ml</span>
+                            <span class="price">29 RON</span>
+                        </div>
+                        <div class="meniu-img-container">
+                            <img src="images/ciorba-ardeleneasca.jpg" alt="Ciorbă ardelenească"> 
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Supă cremă de dovleac cu semințe</span>
+                            <span class="weight">300 ml</span>
+                            <span class="price">25 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Ciorbă de legume</span>
+                            <span class="weight">350 ml</span>
+                            <span class="price">22 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Ciorbă de perișoare</span>
+                            <span class="weight">350 ml</span>
+                            <span class="price">27 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Supă de pui cu tăiței de casă</span>
+                            <span class="weight">350 ml</span>
+                            <span class="price">26 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Supă minestrone italiană</span>
+                            <span class="weight">350 ml</span>
+                            <span class="price">25 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Supă de linte orientală</span>
+                            <span class="weight">300 ml</span>
+                            <span class="price">24 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Supă de pește mediteraneană</span>
+                            <span class="weight">350 ml</span>
+                            <span class="price">32 RON</span>
+                        </div>
+                    </div>
+                    <div class="meniu-vertical-line"></div>
+                    <div class="right-side">
+                        <p class="menu-category" id="paste">Salate / Paste</p>
+                        <div class="menu-title">
+                            <span class="name-title">Preparat</span>
+                            <span class="weight-title">Gramaj</span>
+                            <span class="price-title">Preț</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Caesar Salad cu pui</span>
+                            <span class="weight">350 g</span>
+                            <span class="price">39 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Salată grecească clasică</span>
+                            <span class="weight">300 g</span>
+                            <span class="price">32 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Salată cu somon afumat și iaurt</span>
+                            <span class="weight">320 g</span>
+                            <span class="price">42 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Salată cu avocado, roșii și mozzarella</span>
+                            <span class="weight">320 g</span>
+                            <span class="price">38 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Salată de quinoa cu legume și feta</span>
+                            <span class="weight">300 g</span>
+                            <span class="price">36 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Spaghetti Carbonara</span>
+                            <span class="weight">350 g</span>
+                            <span class="price">42 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Tagliatelle cu pui și ciuperci</span>
+                            <span class="weight">380 g</span>
+                            <span class="price">46 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Penne Arrabbiata</span>
+                            <span class="weight">350 g</span>
+                            <span class="price">34 RON</span>
+                        </div>
+                        <div class="meniu-img-container">
+                            <img src="images/penne arrabbiata.jpg" alt="Penne Arrabbiata">
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Linguine cu fructe de mare</span>
+                            <span class="weight">400 g</span>
+                            <span class="price">52 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Lasagna alla Bolognese</span>
+                            <span class="weight">400 g</span>
+                            <span class="price">48 RON</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="meniu-line" style="padding: 30px 0px;">
+                    <p><i class="fa-solid fa-star-of-life"></i></p>
+                 </div>
+                 <div class="meniu-box">
+                    <div class="left-side">
+                        <p class="menu-category" id="pizza">Pizza</p>
+                        <div class="menu-title">
+                            <span class="name-title">Preparat</span>
+                            <span class="weight-title">Gramaj</span>
+                            <span class="price-title">Preț</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Margherita</span>
+                            <span class="weight">500 g</span>
+                            <span class="price">32 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Prosciutto e Funghi</span>
+                            <span class="weight">550 g</span>
+                            <span class="price">38 RON</span>
+                        </div>
+                        <div class="meniu-img-container">
+                            <img src="images/pizza.jpg" alt="Pizza Prosciutto e Funghi">
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Quattro Formaggi</span>
+                            <span class="weight">500 g</span>
+                            <span class="price">42 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Diavola</span>
+                            <span class="weight">520 g</span>
+                            <span class="price">39 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Capricciosa</span>
+                            <span class="weight">550 g</span>
+                            <span class="price">40 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Tonno e Cipolla</span>
+                            <span class="weight">530 g</span>
+                            <span class="price">43 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Vegetariana</span>
+                            <span class="weight">500 g</span>
+                            <span class="price">36 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Hawaii</span>
+                            <span class="weight">520 g</span>
+                            <span class="price">38 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Pollo BBQ</span>
+                            <span class="weight">550 g</span>
+                            <span class="price">44 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Calzone</span>
+                            <span class="weight">480 g</span>
+                            <span class="price">37 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Quattro Stagioni</span>
+                            <span class="weight">500 g</span>
+                            <span class="price">41 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Rustica</span>
+                            <span class="weight">550 g</span>
+                            <span class="price">42 RON</span>
+                        </div>
+                    </div>
+                    <div class="meniu-vertical-line"></div>
+                    <div class="right-side">
+                        <p class="menu-category" id="mancaregatita">Mâncare gătită</p>
+                        <div class="menu-title">
+                            <span class="name-title">Preparat</span>
+                            <span class="weight-title">Gramaj</span>
+                            <span class="price-title">Preț</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Tocăniță de vită cu piure</span>
+                            <span class="weight">400 g</span>
+                            <span class="price">44 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Șnițel vienez cu cartofi natur</span>
+                            <span class="weight">350 g</span>
+                            <span class="price">38 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Papricaș de pui cu mămăliguță</span>
+                            <span class="weight">400 g</span>
+                            <span class="price">40 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Varză călită cu cârnați afumați</span>
+                            <span class="weight">400 g</span>
+                            <span class="price">38 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Musaca de cartofi cu carne tocată</span>
+                            <span class="weight">400 g</span>
+                            <span class="price">42 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Chilli con carne</span>
+                            <span class="weight">380 g</span>
+                            <span class="price">43 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Mâncare de mazăre cu carne de porc</span>
+                            <span class="weight">400 g</span>
+                            <span class="price">37 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Tocăniță de ciuperci cu mămăliguță</span>
+                            <span class="weight">350 g</span>
+                            <span class="price">35 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Gulaș unguresc</span>
+                            <span class="weight">400 g</span>
+                            <span class="price">46 RON</span>
+                        </div>
+                        <div class="meniu-img-container">
+                            <img src="images/gulas.jpg" alt="Gulas Unguresc">
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Pui Shanghai cu orez basmati</span>
+                            <span class="weight">380 g</span>
+                            <span class="price">44 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Pui crispy cu sos de usturoi și cartofi</span>
+                            <span class="weight">400 g</span>
+                            <span class="price">45 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Pui crispy cu legume sotate și orez</span>
+                            <span class="weight">380 g</span>
+                            <span class="price">44 RON</span>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="meniu-line" style="padding: 30px 0px;">
+                    <p><i class="fa-solid fa-star-of-life"></i></p>
+                 </div>
+                 <div class="meniu-box">
+                    <div class="left-side">
+                        <p class="menu-category" id="grill">Grill</p>
+                        <div class="menu-title">
+                            <span class="name-title">Preparat</span>
+                            <span class="weight-title">Gramaj</span>
+                            <span class="price-title">Preț</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Piept de pui la grătar</span>
+                            <span class="weight">200 g</span>
+                            <span class="price">33 RON</span>
+                        </div>
+                        <div class="meniu-img-container">
+                            <img src="images/piept-pui.jpg" alt="Piept de pui la gratar">
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Ceafă de porc</span>
+                            <span class="weight">200 g</span>
+                            <span class="price">35 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Mici românești (3 buc.)</span>
+                            <span class="weight">250 g</span>
+                            <span class="price">32 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Cotlet de porc cu sos de muștar</span>
+                            <span class="weight">250 g</span>
+                            <span class="price">39 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Mușchiuleț de porc la grătar</span>
+                            <span class="weight">250 g</span>
+                            <span class="price">42 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Coaste de porc la grătar cu sos BBQ</span>
+                            <span class="weight">300 g</span>
+                            <span class="price">48 RON</span>
+                        </div>
+                    </div>
+                    <div class="meniu-vertical-line"></div>
+                    <div class="right-side">
+                        <p class="menu-category" id="fructedemare">Fructe de mare</p>
+                        <div class="menu-title">
+                            <span class="name-title">Preparat</span>
+                            <span class="weight-title">Gramaj</span>
+                            <span class="price-title">Preț</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Calamari pane cu sos de usturoi</span>
+                            <span class="weight">250 g</span>
+                            <span class="price">49 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Midii în sos de vin alb</span>
+                            <span class="weight">400 g</span>
+                            <span class="price">54 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Creveți cu usturoi și unt</span>
+                            <span class="weight">250 g</span>
+                            <span class="price">56 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Doradă la grătar</span>
+                            <span class="weight">300 g</span>
+                            <span class="price">62 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Somon la grătar cu lămâie</span>
+                            <span class="weight">280 g</span>
+                            <span class="price">58 RON</span>
+                        </div>
+                        <div class="meniu-img-container">
+                            <img src="images/somon.jpeg" alt="Somon la gratar">
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Risotto cu fructe de mare</span>
+                            <span class="weight">350 g</span>
+                            <span class="price">52 RON</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="meniu-line" style="padding: 30px 0px;">
+                    <p><i class="fa-solid fa-star-of-life"></i></p>
+                </div>
+                <div class="meniu-box">
+                    <div class="left-side">
+                        <p class="menu-category" id="garnituri">Garnituri / Sosuri</p>
+                        <div class="menu-title">
+                            <span class="name-title">Preparat</span>
+                            <span class="weight-title">Gramaj</span>
+                            <span class="price-title">Preț</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Cartofi prăjiți</span>
+                            <span class="weight">200 g</span>
+                            <span class="price">12 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Cartofi wedges</span>
+                            <span class="weight">200 g</span>
+                            <span class="price">14 RON</span>
+                        </div>
+                        <div class="meniu-img-container">
+                            <img src="images/cartofi-wedges.jpg" alt="Cartofi Wedges">
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Salată de varză</span>
+                            <span class="weight">150 g</span>
+                            <span class="price">10 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Salată mixtă</span>
+                            <span class="weight">150 g</span>
+                            <span class="price">12 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Legume la grătar</span>
+                            <span class="weight">180 g</span>
+                            <span class="price">15 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Orez basmati</span>
+                            <span class="weight">200 g</span>
+                            <span class="price">12 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Piure de cartofi</span>
+                            <span class="weight">180 g</span>
+                            <span class="price">12 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Mămăliguță</span>
+                            <span class="weight">180 g</span>
+                            <span class="price">12 RON</span>
+                        </div>
+                    </div>
+                    <div class="meniu-vertical-line" id="deserturi"></div>
+                    <div class="right-side">
+                        <p class="menu-category">Deserturi</p>
+                        <div class="menu-title">
+                            <span class="name-title">Preparat</span>
+                            <span class="weight-title">Gramaj</span>
+                            <span class="price-title">Preț</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Tiramisu clasic</span>
+                            <span class="weight">160 g</span>
+                            <span class="price">28 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Cheesecake cu fructe de pădure</span>
+                            <span class="weight">180 g</span>
+                            <span class="price">29 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Clătite cu ciocolată și banane</span>
+                            <span class="weight">200 g</span>
+                            <span class="price">25 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Papanși cu smântână și dulceață</span>
+                            <span class="weight">220 g</span>
+                            <span class="price">27 RON</span>
+                        </div>
+                       <div class="menu-item">
+                            <span class="name">Mousse de ciocolată</span>
+                            <span class="weight">150 g</span>
+                            <span class="price">26 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Lava cake cu înghețată</span>
+                            <span class="weight">170 g</span>
+                            <span class="price">32 RON</span>
+                        </div>
+                        <div class="meniu-img-container">
+                            <img src="images/lava cake.jpg" alt="Lava cake cu inghetata">
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Profiterol cu vanilie și ciocolată</span>
+                            <span class="weight">180 g</span>
+                            <span class="price">30 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Tartă cu lămâie și bezea</span>
+                            <span class="weight">160 g</span>
+                            <span class="price">28 RON</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="meniu-line" style="padding: 30px 0px;">
+                    <p><i class="fa-solid fa-star-of-life"></i></p>
+                </div>
+                <div class="meniu-box">
+                    <div class="left-side">
+                        <p class="menu-category" id="cafea">Cafea</p>
+                        <div class="menu-title">
+                            <span class="name-title">Băutură</span>
+                            <span class="weight-title">Cantitate</span>
+                            <span class="price-title">Preț</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Espresso</span>
+                            <span class="weight">30ml</span>
+                            <span class="price">12 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Cappuccino</span>
+                            <span class="weight">180ml</span>
+                            <span class="price">15 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Ice Coffee</span>
+                            <span class="weight">300ml</span>
+                            <span class="price">17 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Flat White</span>
+                            <span class="weight">180ml</span>
+                            <span class="price">16 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Caramel Macchiato</span>
+                            <span class="weight">250ml</span>
+                            <span class="price">18 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Latte Macchiato</span>
+                            <span class="weight">250ml</span>
+                            <span class="price">16 RON</span>
+                        </div>
+                        <div class="meniu-img-container">
+                            <img src="images/latte.jpg" alt="Latte Macchiato" style="height: 250px;">
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Mocha Frappuccino</span>
+                            <span class="weight">350ml</span>
+                            <span class="price">20 RON</span>
+                        </div>
+                    </div>
+                    <div class="meniu-vertical-line"></div>
+                    <div class="right-side">
+                        <p class="menu-category" id="bauturiracoritoare">Bauturi răcoritoare</p>
+                        <div class="menu-title">
+                            <span class="name-title">Băutură</span>
+                            <span class="weight-title">Cantitate</span>
+                            <span class="price-title">Preț</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Apă plată</span>
+                            <span class="weight">500ml</span>
+                            <span class="price">10 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Apă minerală</span>
+                            <span class="weight">500ml</span>
+                            <span class="price">10 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Suc natural de portocale</span>
+                            <span class="weight">250ml</span>
+                            <span class="price">14 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Limonadă cu mentă</span>
+                            <span class="weight">400ml</span>
+                            <span class="price">15 RON</span>
+                        </div>
+                        <div class="meniu-img-container">
+                            <img src="images/limonada.jpg" alt="Limonada cu menta" style="height: 250px;">
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Ice Tea piersică</span>
+                            <span class="weight">330ml</span>
+                            <span class="price">12 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Coca-Cola</span>
+                            <span class="weight">330ml</span>
+                            <span class="price">12 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Fanta</span>
+                            <span class="weight">330ml</span>
+                            <span class="price">12 RON</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="meniu-line" style="padding: 30px 0px;">
+                    <p><i class="fa-solid fa-star-of-life"></i></p>
+                </div>
+                <div class="meniu-box">
+                    <div class="left-side">
+                        <p class="menu-category" id="bauturialcoolice">Bauturi alcoolice</p>
+                        <div class="menu-item">
+                            <span class="name">Heineken</span>
+                            <span class="weight">330ml</span>
+                            <span class="price">14 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Ursus Premium</span>
+                            <span class="weight">500ml</span>
+                            <span class="price">18 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Peroni Nastro Azzurro</span>
+                            <span class="weight">330ml</span>
+                            <span class="price">16 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Guinness</span>
+                            <span class="weight">440ml</span>
+                            <span class="price">20 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Vodka Finlandia</span>
+                            <span class="weight">50ml</span>
+                            <span class="price">16 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Gin Beefeater</span>
+                            <span class="weight">50ml</span>
+                            <span class="price">18 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Whisky Jack Daniel’s</span>
+                            <span class="weight">50ml</span>
+                            <span class="price">22 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Tequila Olmeca</span>
+                            <span class="weight">50ml</span>
+                            <span class="price">20 RON</span>
+                        </div>
+                        <div class="meniu-img-container">
+                            <img src="images/bauturi-alcoolice.jpg" alt="Bauturi alcoolice">
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Jägermeister</span>
+                            <span class="weight">50ml</span>
+                            <span class="price">19 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Palincă de prune</span>
+                            <span class="weight">50ml</span>
+                            <span class="price">15 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Lichior Baileys</span>
+                            <span class="weight">50ml</span>
+                            <span class="price">20 RON</span>
+                        </div>
+                    </div>
+                    <div class="meniu-vertical-line"></div>
+                    <div class="left-side">
+                        <p class="menu-category" id="cocktails">Cocktails</p>
+                        <div class="menu-title">
+                            <span class="name-title">Băutură</span>
+                            <span class="weight-title">Cantitate</span>
+                            <span class="price-title">Preț</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Aperol Spritz</span>
+                            <span class="weight">250ml</span>
+                            <span class="price">32 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Cuba Libre</span>
+                            <span class="weight">250ml</span>
+                            <span class="price">30 RON</span>
+                        </div>
+                        <div class="meniu-img-container">
+                            <img src="images/cuba-libre.png" alt="Cuba Libre">
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Mojito</span>
+                            <span class="weight">300ml</span>
+                            <span class="price">34 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Cosmopolitan</span>
+                            <span class="weight">200ml</span>
+                            <span class="price">34 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Pina Colada</span>
+                            <span class="weight">300ml</span>
+                            <span class="price">35 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Tequila Sunrise</span>
+                            <span class="weight">250ml</span>
+                            <span class="price">33 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Mai Tai</span>
+                            <span class="weight">250ml</span>
+                            <span class="price">35 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Daiquiri căpșuni</span>
+                            <span class="weight">250ml</span>
+                            <span class="price">34 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Sex on the Beach</span>
+                            <span class="weight">300ml</span>
+                            <span class="price">33 RON</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="name">Long Island Iced Tea</span>
+                            <span class="weight">350ml</span>
+                            <span class="price">38 RON</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="meniu-line" style="padding: 30px 0px;">
+                    <p><i class="fa-solid fa-star-of-life"></i></p>
+                </div>
+                <p class="last-p">Vă mulțumim că ne-ați ales! Poftă bună!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="logo-footer">
+            <img src="images/logo-footer-2.png" alt="Bistro Luna Logo">
+            <span>Bistro Luna</span>
+        </div>
+        <div class="footer-content">
+            <div class="footer-navbar">
+                <p class="mini-title">Restaurant Bistro Luna</p>
+                <ul class="footer-nav-links">
+                    <li><a href="">Despre noi</a></li>
+                    <li><a href="">Meniu</a></li>
+                    <li><a href="">Galerie</a></li>
+                    <li><a href="">Rezervari</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <p>Contactați-ne pe</p>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+                <p style="padding-bottom: 20px; font-size: 20px;">sau apăsând butonul de mai jos</p>
+                <a href="#"><button>CONTACT</button></a>
+            </div>
+            <div class="footer-infos">
+                <p class="mini-title">Restaurant Bistro Luna</p>
+                <ul class="infos">
+                    <li><i class="fa fa-phone"></i> <span>+40 749 853 688</span></li>
+                    <li><i class="fa-solid fa-envelope"></i> <span>restaurant.b-luna@gmail.com</span></li>
+                    <li><i class="fa-solid fa-location-dot"></i> <span>Str. Dobrogei Nr. 36B, Brașov</span></li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Program:</span>
+                        <div class="program">
+                            <span class="program-line">L - J: 10<sup>00</sup> - 23<sup>00</sup></span>
+                            <span class="program-line">V - D: 14<sup>00</sup> - 24<sup>00</sup></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="go-up">
+            <button id="toTop"><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+        <div class="footer-footer">
+            <div class="copyright">
+                <p>© 2025 Restaurant B-Luna | Realizat de <a href="" target="_blank">RobertWeb</a> | Toate drepturile rezervate.</p>
+            </div>
+            <div class="policy">
+                <p><a href="">Politica de confidențialitate</a> | <a href="">Termeni și condiții</a></p>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body> 

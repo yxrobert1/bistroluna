@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Luna - Luxury Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header class="header" id="navbar">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                <img src="images/logo.png" alt="Bistro Luna Logo">
+                <span>Bistro Luna</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="meniu.html">Menu</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="#rezervari">Reservations</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="languages-en">
+                <a href="rezervari.html" class="ro-ro">RO</a>
+                <a href="" class="ro-en" onclick="event.preventDefault()">EN</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        </nav>
+    </header>
+
+    <section class="hero-rezervari" id="hero-rezervari">
+        <div class="hero-content">
+            <div class="hero-rezervari-box-en">
+                <p>Restaurant Bistro Luna Reservations</p>
+            </div>
+        </div>
+    </section>
+
+    <p style="width: 100%; height: 10px; background-color: rgba(165, 113, 70, 1);"></p>
+
+    <section class="rezervari" id="rezervari">
+        <div class="rezervari-content">
+            <div class="photo-box-1" style="height: auto;">
+                <img src="images/poza-restaurant-7.png" alt="Photo 1">
+            </div>
+            <div class="rezervari-box">
+                <h2>Reservations</h2> 
+                <p class="subtitle">Restaurant Bistro Luna</p>
+                <div class="rezervari-line">
+                    <p><i class="fa-solid fa-star-of-life"></i></p>
+                </div>
+                <p class="txt">You can make a reservation by email, by calling our phone number, or by filling out the form below</p>
+                <ul class="infos-rezervari">
+                    <li><i class="fa fa-phone"></i> <span>+40 749 853 688</span></li>
+                    <li><i class="fa-solid fa-envelope"></i> <span>restaurant.b-luna@gmail.com</span></li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Hours:</span>
+                        <div class="program">
+                            <span class="program-line">M - T: 10<sup>00</sup> - 23<sup>00</sup></span>
+                            <span class="program-line">F - S: 14<sup>00</sup> - 24<sup>00</sup></span>
+                        </div>
+                    </li>
+                </ul>
+                <p class="form-title">Reservation Form</p>
+                <div class="rezervari-line">
+                    <p><i class="fa-solid fa-star-of-life"></i></p>
+                </div>
+                <form>
+                    <div class="rezervari-formular">
+                        <div class="form">
+                            <div class="right-side-form">
+                                <div class="input-box">
+                                    <label for="firstname">Last Name</label>
+                                    <input type="text" id="firstname" name="firstname" autocomplete="off" required>
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="phonenumber">Phone Number</label>
+                                    <input type="tel" id="phonenumber" name="phonenumber" maxlength="10" autocomplete="off" required pattern="[0-9]{10}"   oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="personnumber">Number of Guests</label>
+                                    <input type="number" id="personnumber" name="personnumber" min="1" max="12" value="1" required>
+                                </div>
+                            </div>
+                            <div class="rezervari-vertical-line"></div>
+                            <div class="-left-side-form">
+                                <div class="input-box">
+                                    <label for="lastname">First Name</label>
+                                    <input type="text" id="lastname" name="lastname" autocomplete="off" required>
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="data">Reservation Date</label>
+                                    <input type="date" id="data" name="data" required>
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="data">Reservation Time</label>
+                                    <input type="time" id="data" name="data" required>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="atention-container">
+                        <p class="atention-title"><i class="fa-solid fa-triangle-exclamation"></i> <span>Please note</span></p>
+                        <p>All fields are required!</p>
+                    </div>
+                    <div class="policy-text">
+                        <p>Your data will be used solely to process your reservation,in line with our <a href="policty.html" target="_blank">Privacy Policy</a></p>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" class="submit">Reserve Now</button>
+                        <button type="reset" class="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="logo-footer">
+            <img src="images/logo-footer-2.png" alt="Bistro Luna Logo">
+            <span>Bistro Luna</span>
+        </div>
+        <div class="footer-content">
+            <div class="footer-navbar">
+                <p class="mini-title">Restaurant Bistro Luna</p>
+                <ul class="footer-nav-links">
+                    <li><a href="">Despre noi</a></li>
+                    <li><a href="">Meniu</a></li>
+                    <li><a href="">Galerie</a></li>
+                    <li><a href="">Rezervari</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <p>Contact us on</p>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+                <p style="padding-bottom: 20px; font-size: 20px;">or by clicking the button below.</p>
+                <a href="#"><button>CONTACT</button></a>
+            </div>
+            <div class="footer-infos">
+                <p class="mini-title">Restaurant Bistro Luna</p>
+                <ul class="infos">
+                    <li><i class="fa fa-phone"></i> <span>+40 749 853 688</span></li>
+                    <li><i class="fa-solid fa-envelope"></i> <span>restaurant.b-luna@gmail.com</span></li>
+                    <li><i class="fa-solid fa-location-dot"></i> <span>Str. Dobrogei Nr. 36B, Brașov</span></li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Hours:</span>
+                        <div class="program">
+                            <span class="program-line">M - T: 10<sup>00</sup> - 23<sup>00</sup></span>
+                            <span class="program-line">F - D: 14<sup>00</sup> - 24<sup>00</sup></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="go-up">
+            <button id="toTop"><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+        <div class="footer-footer">
+            <div class="copyright">
+                <p>© 2025 Restaurant B-Luna | Designed by <a href="" target="_blank">RobertWeb</a> | All rights reserved..</p>
+            </div>
+            <div class="policy">
+                <p><a href="">Privacy Policy</a> | <a href="">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
