@@ -1083,6 +1083,7 @@ body {
     width: 100%;
     text-align: center;
     transition: all 0.5s ease;
+    padding: 5px 0px;
 }
 
 .dropdown-menu li:hover {
@@ -1456,6 +1457,107 @@ p.form-title {
     font-family: 'Playfair Display';
     font-size: 40px;
     color: rgba(244, 232, 214, 1);
+}
+
+.nav-item-dropdown-en {
+    position: relative;
+}
+
+.nav-item-dropdown-en::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: transparent;
+}
+
+.dropdown-menu-en {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    background: rgba(165, 113, 70, 1);
+    list-style: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 0px 0;
+    z-index: 999;
+    opacity: 0;
+    transform: translateX(-40px);
+    min-width: 150px;
+    pointer-events: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meniu-list .nav-item-dropdown-en .first{
+    margin-left: 17px;
+}
+
+.meniu-list .nav-item-dropdown-en .second{
+    margin-left: -5px;
+}
+
+.meniu-list .nav-item-dropdown-en .third{
+    margin-left: 6px;
+}
+
+.meniu-list .nav-item-dropdown-en .four{
+    margin-left: -30px;
+}
+
+.dropdown-menu-en li {
+    border-radius: 0px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+    padding: 5px 0px;
+}
+
+.dropdown-menu-en li:hover {
+    background-color: rgba(244, 232, 214, 1);
+}
+
+.dropdown-menu-en li:hover:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.dropdown-menu-en li:hover:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.dropdown-menu-en li:hover a {
+    color: rgba(165, 113, 70, 1);
+}
+
+.nav-item-dropdown-en:hover .dropdown-menu-en {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.nav-item-dropdown-en:not(:hover) .dropdown-menu-en {
+    transition-delay: 0.15s;
+}
+
+.nav-item-dropdown-en a {
+  color: rgba(244, 232, 214, 1);
+  text-decoration: none;
+  display: block;
+  padding: 8px 12px;
+}
+
+p.last-p-en {
+    text-align: center;
+    font-size: 32px;
+    padding: 0px 0px 30px 0px;
+    font-family: 'Great Vibes', cursive;
+    color: rgba(11, 26, 43, 1);;
 }
 
 @media (max-width: 1100px) {
