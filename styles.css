@@ -2264,10 +2264,7 @@ p.last-p-en {
 
     html, body {
         scrollbar-width: none;
-        width: 100%;
-        overscroll-behavior-x: none;
-        touch-action: pan-y;
-        width: 100%;
+        width: 100vw;
     }
 
     .hero {
@@ -2471,7 +2468,7 @@ p.last-p-en {
 
     .hero-menu-box {
         gap: 80px;
-        width: 80%;
+        width: 8%;
     }
 
     .hero-menu-box p{
