@@ -2049,14 +2049,13 @@ p.last-p-en {
     display: none;
 }
 
+.phone {
+    display: none;
+}
+
 @media (max-width: 430px) {
 
     /* NAVBAR - TRANSFORMAT IN MENU-SIDE-BAR */
-
-    .navbar {
-        position: fixed;
-        top: 0;
-    }
 
     .navbar .logo a{
         font-size: 18px;
@@ -2276,7 +2275,7 @@ p.last-p-en {
         width: 100vw;
     }
 
-    .hero {
+    .hero, .hero-menu, .hero-rezervari, .hero-galerie, .hero-contact {
         height: auto;
         background-position: center;
         background-size: cover;
@@ -2453,7 +2452,7 @@ p.last-p-en {
 
     .footer-infos ul {
         margin-top: 10px;
-        margin-left: 40px;
+        margin-left: 30px;
     }
 
     .footer-footer {
@@ -2573,5 +2572,81 @@ p.last-p-en {
     .menu-title span.weight-title, .menu-item span.weight {
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    /* REZERVARI */
+
+    .hero-rezervari-box {
+        gap: 80px;
+        width: 80%;
+    }
+
+    .hero-rezervari-box p{
+        font-size: 34px;
+    }
+
+    .rezervari-content .photo-box-1 {
+        display: none;
+    }
+
+    .rezervari-box {
+        width: 100%;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .phone {
+        display: flex;
+    }
+
+    .rezervari-line::before {
+        content: "";
+        flex: 1;                    
+        height: 2px;                
+        background-color: rgba(165, 113, 70, 1);
+        margin: 0 35px 0px 40px;       
+    }
+
+    .rezervari-line::after {
+        content: "";
+        flex: 1;                    
+        height: 2px;                
+        background-color: rgba(165, 113, 70, 1);
+        margin: 0 40px 0px 35px; 
+    }
+
+    .rezervari-formular .rezervari-vertical-line {
+        display: none;
+    }
+
+    .rezervari-formular .form {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .rezervari-content p.txt {
+        font-size: 16px;
+    }
+
+    p.form-title {
+        font-size: 32px;
+    }
+
+    .infos-rezervari {
+        margin-left: 30px;
+    }
+
+    .form-buttons {
+        width: 100%;
+    }
+
+    .form-buttons button {
+        width: 150px;
+        height: 50px;
+        padding-top: 0; 
+        padding-bottom: 0;
+        font-size: 16px;
     }
 }

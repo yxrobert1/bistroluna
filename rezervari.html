@@ -30,6 +30,31 @@
             </div>
             <button class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
         </nav>
+        <div class="menu-side-bar" id="menu-side-bar">
+            <button class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="menu-nav-links">
+                <li><a href="index.html">Despre noi</a></li>
+                <li><a href="meniu.html">Meniu</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="#rezervari">Rezervari</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="languages">
+                <a href="" class="ro-ro" onclick="event.preventDefault()">RO</a>
+                <a href="rezervari-en.html" class="ro-en">EN</a>
+            </div>
+            <div class="contact-us-side-bar">
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+            <ul class="infos">
+                <li><i class="fa fa-phone"></i> <span>+40 749 853 688</span></li>
+                <li><i class="fa-solid fa-envelope"></i> <span>bistro-luna@gmail.com</span></li>
+            </ul>
+        </div>
     </header>
 
     <section class="hero-rezervari" id="hero-rezervari">
@@ -72,7 +97,7 @@
                 </div>
                 <form>
                     <div class="rezervari-formular">
-                        <div class="form">
+                        <div class="form desktop">
                             <div class="right-side-form">
                                 <div class="input-box">
                                     <label for="firstname">Nume</label>
@@ -95,6 +120,42 @@
                                     <label for="lastname">Prenume</label>
                                     <input type="text" id="lastname" name="lastname" autocomplete="off" required>
                                 </div>
+
+                                <div class="input-box">
+                                    <label for="data">Data rezervării</label>
+                                    <input type="date" id="data" name="data" required>
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="data">Ora rezervării</label>
+                                    <input type="time" id="data" name="data" required>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="form phone">
+                            <div class="right-side-form">
+                                <div class="input-box">
+                                    <label for="firstname">Nume</label>
+                                    <input type="text" id="firstname" name="firstname" autocomplete="off" required>
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="lastname">Prenume</label>
+                                    <input type="text" id="lastname" name="lastname" autocomplete="off" required>
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="phonenumber">Telefon</label>
+                                    <input type="tel" id="phonenumber" name="phonenumber" maxlength="10" autocomplete="off" required pattern="[0-9]{10}"   oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                                </div>
+                            </div>
+                            <div class="rezervari-vertical-line"></div>
+                            <div class="left-side-form">
+                                <div class="input-box">
+                                    <label for="personnumber">Număr de persoane</label>
+                                    <input type="number" id="personnumber" name="personnumber" min="1" max="12" value="1" required>
+                                </div>
+
 
                                 <div class="input-box">
                                     <label for="data">Data rezervării</label>
