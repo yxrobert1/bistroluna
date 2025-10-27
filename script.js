@@ -6,20 +6,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const sidebar = document.getElementById('menu-side-bar');
 const menuToggles = document.querySelectorAll('.menu-toggle');
 
-// Când dai click pe oricare buton cu clasa .menu-toggle
 menuToggles.forEach(btn => {
   btn.addEventListener('click', (event) => {
-    event.stopPropagation(); // oprește propagarea (ca să nu se închidă imediat)
-    sidebar.classList.toggle('show'); // comută vizibilitatea
+    event.stopPropagation();
+    sidebar.classList.toggle('show');
   });
 });
 
-// Când dai click în interiorul sidebar-ului, nu-l închide
+
 sidebar.addEventListener('click', (event) => {
   event.stopPropagation();
 });
 
-// Când dai click oriunde în afară, închide sidebar-ul
 window.addEventListener('click', () => {
   sidebar.classList.remove('show');
 });
