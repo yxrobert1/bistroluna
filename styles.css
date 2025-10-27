@@ -2263,8 +2263,14 @@ p.last-p-en {
     /* CONTINUT */
 
     html, body {
-        scrollbar-width:none;
+        scrollbar-width: none;
         width: 100vw;
+    }
+
+    .body {
+        overscroll-behavior-x: none;
+        touch-action: pan-y;
+        overflow-x: hidden;
     }
 
     .hero {
