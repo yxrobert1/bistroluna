@@ -9,6 +9,12 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
+    <div class="site-blocked">
+        <div class="site-blocked-box">
+            <h2>Site-ul nu a fost încărcat</h2>
+            <p>Accesați de pe telefon sau desktop.</p>
+        </div>
+    </div>
     <header class="header" id="navbar">
         <nav class="navbar">
             <div class="logo">
@@ -21,7 +27,7 @@
                 <li><a href="index.html">Despre noi</a></li>
                 <li><a href="meniu.html">Meniu</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="rezervari.html">Rezervari</a></li>
+                <li><a href="rezervari.html">Rezervări</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="languages">
@@ -30,6 +36,31 @@
             </div>
             <button class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
         </nav>
+        <div class="menu-side-bar" id="menu-side-bar">
+            <button class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="menu-nav-links">
+                <li><a href="index.html">Despre noi</a></li>
+                <li><a href="meniu.html">Meniu</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="rezervari.html">Rezervări</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="languages">
+                <a href="" class="ro-ro" onclick="event.preventDefault()">RO</a>
+                <a href="contact-en.html" class="ro-en">EN</a>
+            </div>
+            <div class="contact-us-side-bar">
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+            <ul class="infos">
+                <li><i class="fa fa-phone"></i> <span>+40 749 853 688</span></li>
+                <li><i class="fa-solid fa-envelope"></i> <span>bistro-luna@gmail.com</span></li>
+            </ul>
+        </div>
     </header>
 
     <section class="hero-contact" id="hero-contact">
@@ -76,7 +107,7 @@
                     <div class="rezervari-line">
                         <p><i class="fa-solid fa-star-of-life"></i></p>
                     </div>
-                    <form>
+                    <form class="desktop">
                         <div class="contact-formular">
                             <div class="form">
                                 <div class="right-side-form">
@@ -95,6 +126,62 @@
                                     <div class="input-box">
                                         <label for="lastname">Prenume</label>
                                         <input type="text" id="lastname" name="lastname" autocomplete="off" required>
+                                    </div>
+
+                                    <div class="input-box">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" autocomplete="off" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subject-message desktop">
+                            <label for="subject">Subiectul mesajului</label>
+                            <select name="subject" id="subject" required>
+                                <option value="">Alege subiectul mesajului</option>
+                                <option value="feedback">Feedback / Sugestie</option>
+                                <option value="colaborare">Colaborare / Parteneriat</option>
+                                <option value="presa">Presă / Media</option>
+                                <option value="angajare">Angajare</option>
+                                <option value="altceva">Altceva</option>
+                            </select>
+                        </div>
+                        <div class="message desktop">
+                            <label for="message">Mesajul tău</label>
+                            <textarea id="message" name="message" autocomplete="off" required maxlength="750"></textarea>
+                            <p id="charCount">0 / 750 caractere</p>
+                        </div>
+                        <div class="atention-container">
+                            <p class="atention-title"><i class="fa-solid fa-triangle-exclamation"></i> <span>Atenție</span></p>
+                            <p>Toate câmpurile sunt obligatorii!</p>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="policy" id="policy" required>
+                            <label for="policy">Sunt de acord cu politica de confidențialitate</label>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="submit" class="submit">Trimite mesajul</button>
+                            <button type="reset" class="reset">Reset</button>
+                        </div>
+                    </form>
+                    <form class="phone">
+                        <div class="contact-formular">
+                            <div class="form">
+                                <div class="right-side-form">
+                                    <div class="input-box">
+                                        <label for="firstname">Nume</label>
+                                        <input type="text" id="firstname" name="firstname" autocomplete="off" required>
+                                    </div>
+
+                                    <div class="input-box">
+                                        <label for="lastname">Prenume</label>
+                                        <input type="text" id="lastname" name="lastname" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="left-side-form">
+                                    <div class="input-box">
+                                        <label for="phonenumber">Telefon</label>
+                                        <input type="tel" id="phonenumber" name="phonenumber" maxlength="10" autocomplete="off" required pattern="[0-9]{10}"   oninput="this.value = this.value.replace(/[^0-9]/g, '');">
                                     </div>
 
                                     <div class="input-box">
@@ -129,9 +216,9 @@
                             <label for="policy">Sunt de acord cu politica de confidențialitate</label>
                         </div>
                         <div class="form-buttons">
-                        <button type="submit" class="submit">Trimite mesajul</button>
-                        <button type="reset" class="reset">Reset</button>
-                    </div>
+                            <button type="submit" class="submit">Trimite mesajul</button>
+                            <button type="reset" class="reset">Reset</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -153,7 +240,7 @@
                     <li><a href="index.html">Despre noi</a></li>
                     <li><a href="meniu.html">Meniu</a></li>
                     <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="rezervari.html">Rezervari</a></li>
+                    <li><a href="rezervari.html">Rezervări</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>

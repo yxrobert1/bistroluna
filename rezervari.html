@@ -9,6 +9,12 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
+    <div class="site-blocked">
+        <div class="site-blocked-box">
+            <h2>Site-ul nu a fost încărcat</h2>
+            <p>Accesați de pe telefon sau desktop.</p>
+        </div>
+    </div>
     <header class="header" id="navbar">
         <nav class="navbar">
             <div class="logo">
@@ -21,7 +27,7 @@
                 <li><a href="index.html">Despre noi</a></li>
                 <li><a href="meniu.html">Meniu</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="#rezervari">Rezervari</a></li>
+                <li><a href="#rezervari">Rezervări</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="languages">
@@ -36,7 +42,7 @@
                 <li><a href="index.html">Despre noi</a></li>
                 <li><a href="meniu.html">Meniu</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="#rezervari">Rezervari</a></li>
+                <li><a href="#rezervari">Rezervări</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="languages">
@@ -95,9 +101,9 @@
                 <div class="rezervari-line">
                     <p><i class="fa-solid fa-star-of-life"></i></p>
                 </div>
-                <form>
+                <form class="desktop">
                     <div class="rezervari-formular">
-                        <div class="form desktop">
+                        <div class="form">
                             <div class="right-side-form">
                                 <div class="input-box">
                                     <label for="firstname">Nume</label>
@@ -132,7 +138,22 @@
                                 </div>  
                             </div>
                         </div>
-                        <div class="form phone">
+                    </div>
+                    <div class="atention-container">
+                        <p class="atention-title"><i class="fa-solid fa-triangle-exclamation"></i> <span>Atenție</span></p>
+                        <p>Toate câmpurile sunt obligatorii!</p>
+                    </div>
+                    <div class="policy-text">
+                        <p>Datele furnizate vor fi folosite exclusiv pentru gestionarea rezervării tale, conform <a href="policty.html" target="_blank">Politicii de confidențialitate</a></p>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" class="submit">Trimite rezervarea</button>
+                        <button type="reset" class="reset">Reset</button>
+                    </div>
+                </form>
+                <form class="phone">
+                    <div class="rezervari-formular">
+                        <div class="form">
                             <div class="right-side-form">
                                 <div class="input-box">
                                     <label for="firstname">Nume</label>
@@ -155,7 +176,6 @@
                                     <label for="personnumber">Număr de persoane</label>
                                     <input type="number" id="personnumber" name="personnumber" min="1" max="12" value="1" required>
                                 </div>
-
 
                                 <div class="input-box">
                                     <label for="data">Data rezervării</label>
@@ -197,7 +217,7 @@
                     <li><a href="index.html">Despre noi</a></li>
                     <li><a href="meniu.html">Meniu</a></li>
                     <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="#rezervari">Rezervari</a></li>
+                    <li><a href="#rezervari">Rezervări</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>

@@ -9,6 +9,12 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
+    <div class="site-blocked">
+        <div class="site-blocked-box">
+            <h2>The website was not loaded</h2>
+            <p>Please access it from a phone or desktop device.</p>
+        </div>
+    </div>
     <header class="header" id="navbar">
         <nav class="navbar">
             <div class="logo">
@@ -30,6 +36,31 @@
             </div>
             <button class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
         </nav>
+        <div class="menu-side-bar" id="menu-side-bar">
+            <button class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-xmark"></i></button>
+            <ul class="menu-nav-links">
+                <li><a href="desprenoi-en.html">About Us</a></li>
+                <li><a href="meniu-en.html">Menu</a></li>
+                <li><a href="galerie-en.html">Gallery</a></li>
+                <li><a href="rezervari-en.html">Reservations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="languages-en">
+                <a href="contact.html" class="ro-ro">RO</a>
+                <a href="" class="ro-en" onclick="event.preventDefault()">EN</a>
+            </div>
+            <div class="contact-us-side-bar">
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+            <ul class="infos">
+                <li><i class="fa fa-phone"></i> <span>+40 749 853 688</span></li>
+                <li><i class="fa-solid fa-envelope"></i> <span>bistro-luna@gmail.com</span></li>
+            </ul>
+        </div>
     </header>
 
     <section class="hero-contact" id="hero-contact">
@@ -76,7 +107,7 @@
                     <div class="rezervari-line">
                         <p><i class="fa-solid fa-star-of-life"></i></p>
                     </div>
-                    <form>
+                    <form class="desktop">
                         <div class="contact-formular">
                             <div class="form">
                                 <div class="right-side-form">
@@ -95,6 +126,64 @@
                                     <div class="input-box">
                                         <label for="lastname">First Name</label>
                                         <input type="text" id="lastname" name="lastname" autocomplete="off" required>
+                                    </div>
+
+                                    <div class="input-box">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" autocomplete="off" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subject-message">
+                            <label for="subject">Message Subject</label>
+                                <select name="subject" id="subject" required>
+                                    <option value="">Select the message subject</option>
+                                    <option value="feedback">Feedback / Suggestion</option>
+                                    <option value="colaborare">Collaboration / Partnership</option>
+                                    <option value="presa">Press / Media</option>
+                                    <option value="angajare">Job Inquiry</option>
+                                    <option value="altceva">Other</option>
+                                </select>
+                            </select>
+                        </div>
+                        <div class="message">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" autocomplete="off" required maxlength="750"></textarea>
+                            <p id="charCount">0 / 750 characters</p>
+                        </div>
+                        <div class="atention-container">
+                            <p class="atention-title"><i class="fa-solid fa-triangle-exclamation"></i> <span>Please note</span></p>
+                            <p>All fields are required!</p>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="policy" id="policy" required>
+                            <label for="policy">I agree to the privacy policy</label>
+                        </div>
+                        <div class="form-buttons">
+                        <button type="submit" class="submit">Trimite mesajul</button>
+                        <button type="reset" class="reset">Reset</button>
+                    </div>
+                    </form>
+                    <form class="phone">
+                        <div class="contact-formular">
+                            <div class="form">
+                                <div class="right-side-form">
+                                    <div class="input-box">
+                                        <label for="firstname">Last Name</label>
+                                        <input type="text" id="firstname" name="firstname" autocomplete="off" required>
+                                    </div>
+
+                                    <div class="input-box">
+                                        <label for="lastname">First Name</label>
+                                        <input type="text" id="lastname" name="lastname" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="contact-vertical-line"></div>
+                                <div class="left-side-form">
+                                    <div class="input-box">
+                                        <label for="phonenumber">Phone Number</label>
+                                        <input type="tel" id="phonenumber" name="phonenumber" maxlength="10" autocomplete="off" required pattern="[0-9]{10}"   oninput="this.value = this.value.replace(/[^0-9]/g, '');">
                                     </div>
 
                                     <div class="input-box">
