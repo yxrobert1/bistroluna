@@ -2264,13 +2264,10 @@ p.last-p-en {
 
     html, body {
         scrollbar-width: none;
-        width: 100vw;
-    }
-
-    .body {
+        width: 100%;
         overscroll-behavior-x: none;
         touch-action: pan-y;
-        overflow-x: hidden;
+        width: 100%;
     }
 
     .hero {
