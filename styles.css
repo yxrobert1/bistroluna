@@ -2269,6 +2269,7 @@ p.last-p-en {
 
     .body {
         overscroll-behavior-x: none;
+        touch-action: pan-y;
         overflow-x: hidden;
     }
 
