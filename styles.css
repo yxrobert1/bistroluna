@@ -2560,6 +2560,10 @@ input[name="slide"] {
         width: 90%;
     }
 
+    .meniu-container p.last-p {
+        font-size: 30px;
+    }
+
     .desktop-hidden-phone-display {
         display: flex;
     }
@@ -2746,7 +2750,7 @@ input[name="slide"] {
     }
 }
 
-@media (min-width: 403px) and (max-width: 1464px) {
+@media (min-width: 430px) and (max-width: 1300px) {
     body > *:not(.site-blocked) {
         display: none !important;
     }
